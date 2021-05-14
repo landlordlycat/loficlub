@@ -168,6 +168,20 @@ const Header = ({ isFullScreen, setIsFullScreen }) => {
             </Button>
           </div>
         </Tooltip>
+        <Tooltip title="Upvote on Product Hunt!" arrow>
+          <a
+            href="https://www.producthunt.com/posts/lofi-club/"
+            target="_blank"
+            rel="noreferrer"
+            className="ml-1 flex items-center bg-[#24292E] hover:bg-[#222] rounded-md relative cursor-pointer border border-[#555] hidden lg:flex"
+          >
+            <img
+              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=295845&theme=dark"
+              className="h-[38px]"
+              alt="Upvote on Product Hunt"
+            />
+          </a>
+        </Tooltip>
         <Tooltip title="Star App on Github" arrow>
           <a
             href="https://github.com/saviomartin/loficlub"
