@@ -128,9 +128,12 @@ This project is licensed under the MIT License - see the [`LICENSE`](LICENSE) fi
 [![netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/saviomartin/loficlub)
 [![Deploy to DO](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/saviomartin/loficlub)
 
-## 🙏 Support
+## 🙌 Support
 
 This project needs a 🌟 from you
+
+My projects are fueled by coffees ☕, get one for me!
+[![](https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/snapshot-bmc-button.png)](https://www.buymeacoffee.com/saviomartin)
 
 <hr>
 <p align="center">
