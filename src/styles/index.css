@@ -692,6 +692,15 @@ video {
 .h-\[\.2em\] {
 	height: .2em;
 }
+.h-\[40px\] {
+	height: 40px;
+}
+.h-\[43px\] {
+	height: 43px;
+}
+.h-\[42px\] {
+	height: 42px;
+}
 .w-full {
 	width: 100%;
 }

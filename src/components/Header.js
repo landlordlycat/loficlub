@@ -212,6 +212,20 @@ const Header = ({ isFullScreen, setIsFullScreen }) => {
             </Button>
           </a>
         </Tooltip>
+        <Tooltip title="Buy Me A Coffee" arrow>
+          <a
+            href="https://buymeacoffee.com/saviomartin"
+            target="_blank"
+            rel="noreferrer"
+            className="ml-1 flex items-center bg-[#24292E] hover:bg-[#222] rounded-md relative cursor-pointer border border-[#555] hidden lg:flex"
+          >
+            <img
+              src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+              className="h-[42px]"
+              alt="Buy Me A Coffee"
+            />
+          </a>
+        </Tooltip>
       </div>
     </div>
   );
