@@ -12,6 +12,7 @@
     "aos": "^2.3.4",
     "axios": "^0.21.1",
     "date-fns": "^2.21.3",
+    "dotenv": "^8.2.0",
     "firebase": "^8.5.0",
     "jquery": "^3.6.0",
     "postcss-cli": "^8.3.1",
