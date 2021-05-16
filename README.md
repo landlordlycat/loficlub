@@ -131,9 +131,9 @@ This project is licensed under the MIT License - see the [`LICENSE`](LICENSE) fi
 ## 🙌 Support
 
 This project needs a 🌟 from you
-
 My projects are fueled by coffees ☕, get one for me!
-[![](https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/snapshot-bmc-button.png)](https://www.buymeacoffee.com/saviomartin)
+
+<a href="https://www.buymeacoffee.com/saviomartin" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="70" ></a>
 
 <hr>
 <p align="center">
