@@ -12,7 +12,7 @@ import {
   BsClock,
   BsMusicNoteList,
   BsFullscreenExit,
-  BsStar,
+  BsStar
 } from "react-icons/bs";
 
 // components

@@ -146,6 +146,7 @@
         <div class="cube2"></div>
       </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
       $(window).on("load", function () {
         $(".loader-wrapper").fadeOut("slow");
@@ -154,7 +155,7 @@
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", function () {
           navigator.serviceWorker
-            .register("worker.js")
+            .register("./sw.js")
             .then(
               function (registration) {
                 console.log(
@@ -173,6 +174,8 @@
       } else {
         console.log("Service Worker is not supported by browser.");
       }
+      
     </script>
+    <script src="./pwa.js"></script>
   </body>
 </html>
