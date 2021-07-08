@@ -6,16 +6,16 @@ const Sounds = () => {
     var audio = document.getElementById(name);
     const img = document.querySelector(`.${name}-image`);
 
-    audio.onload = () => {
-      toast.loading("Loading...");
-    };
+    toast.loading("Loading...");
 
     if (audio.paused) {
-      img.style.opacity = 1;
       audio.play();
+      img.style.opacity = 1;
+      toast.remove();
     } else {
-      img.style.opacity = 0.35;
       audio.pause();
+      toast.remove();
+      img.style.opacity = 0.35;
     }
   };
   return (
