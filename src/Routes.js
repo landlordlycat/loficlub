@@ -127,7 +127,7 @@ const Routes = () => {
               <TodoList fetchVideo={fetchVideo} />
             </Route>
             <Route path="/sounds" exact>
-              <Sounds />
+              <Sounds setPaused={setPaused} />
             </Route>
             <Route path="/pomodoro" exact>
               <Pomodoro />

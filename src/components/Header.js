@@ -12,7 +12,8 @@ import {
   BsClock,
   BsMusicNoteList,
   BsFullscreenExit,
-  BsStar
+  BsCollectionPlay,
+  BsStar,
 } from "react-icons/bs";
 
 // components
@@ -77,6 +78,15 @@ const Header = ({ isFullScreen, setIsFullScreen }) => {
         </Link>
       </div>
       <div className="flex items-center mr-5 justify-center lg:justify-end">
+        <Link to="/sounds" className="flex items-center">
+          <Tooltip title="Sounds Collection" arrow>
+            <div className="w-10 flex items-center overflow-hidden cursor-pointer">
+              <Button className="-mr-5 material-header-btn">
+                <BsCollectionPlay className="-mt-1 -ml-2 text-2xl text-[#F0E9E2]" />
+              </Button>
+            </div>
+          </Tooltip>
+        </Link>
         <Link to="/chat" className="flex items-center">
           <Tooltip title="Chat" arrow>
             <Tooltip title="Chat" arrow>
@@ -136,6 +146,7 @@ const Header = ({ isFullScreen, setIsFullScreen }) => {
             </div>
           </Tooltip>
         </Link>
+
         <Link to="/keyboard-shortcuts" className="flex items-center">
           <Tooltip title="Keyboard Shortcuts" arrow>
             <div className="w-11 flex items-center overflow-hidden cursor-pointer">
@@ -148,6 +159,7 @@ const Header = ({ isFullScreen, setIsFullScreen }) => {
             </div>
           </Tooltip>
         </Link>
+
         <Tooltip title="Full Screen" arrow>
           <div
             className="w-11 flex items-center overflow-hidden"
@@ -210,20 +222,6 @@ const Header = ({ isFullScreen, setIsFullScreen }) => {
                 <FiTwitter className="ml-1" />
               </div>
             </Button>
-          </a>
-        </Tooltip>
-        <Tooltip title="Buy Me A Coffee" arrow>
-          <a
-            href="https://buymeacoffee.com/saviomartin"
-            target="_blank"
-            rel="noreferrer"
-            className="ml-1 items-center bg-[#24292E] hover:bg-[#222] rounded-md relative cursor-pointer border border-[#555] hidden lg:flex"
-          >
-            <img
-              src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
-              className="h-[42px]"
-              alt="Buy Me A Coffee"
-            />
           </a>
         </Tooltip>
       </div>

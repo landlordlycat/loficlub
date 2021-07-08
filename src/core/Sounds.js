@@ -1,7 +1,13 @@
 import sounds from "../sounds";
 import toast, { Toaster } from "react-hot-toast";
+import { useEffect } from "react";
 
-const Sounds = () => {
+const Sounds = ({ setPaused }) => {
+  useEffect(() => {
+    setPaused(true);
+    // eslint-disable-next-line
+  }, []);
+
   const playSound = (name) => {
     var audio = document.getElementById(name);
     const img = document.querySelector(`.${name}-image`);
