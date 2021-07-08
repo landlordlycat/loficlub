@@ -3,8 +3,6 @@ import React, { useEffect, useState } from "react";
 // react router
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-
-
 // base
 import Base from "./Base";
 
@@ -18,6 +16,7 @@ import {
   Home,
   KeyboardShortcuts,
   Pomodoro,
+  Sounds,
   StaredMusic,
   TodoList,
   Tracks,
@@ -88,7 +87,7 @@ const Routes = () => {
           setBgGif={setBgGif}
         >
           <div className="absolute top-0 left-0 invisible -z-10">
-            {id && (
+            {/* {id && (
               <YTwrapper
                 videoId={id}
                 paused={paused}
@@ -97,7 +96,7 @@ const Routes = () => {
                 onBuffering={onBuffering}
                 onPlaying={onPlaying}
               />
-            )}
+            )} */}
           </div>
           <Switch>
             <Route path="/" exact>
@@ -126,6 +125,9 @@ const Routes = () => {
             </Route>
             <Route path="/todo" exact>
               <TodoList fetchVideo={fetchVideo} />
+            </Route>
+            <Route path="/sounds" exact>
+              <Sounds />
             </Route>
             <Route path="/pomodoro" exact>
               <Pomodoro />
