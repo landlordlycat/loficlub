@@ -17,10 +17,14 @@ const Sounds = ({ setPaused }) => {
     if (audio.paused) {
       audio.play();
       img.style.opacity = 1;
-      toast.remove();
+      setTimeout(()=>{
+        toast.remove();
+      }, [1000])
     } else {
       audio.pause();
-      toast.remove();
+      setTimeout(()=>{
+        toast.remove();
+      }, [1000])
       img.style.opacity = 0.35;
     }
   };
