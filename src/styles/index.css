@@ -905,6 +905,9 @@ video {
 .pb-\[30\%\] {
 	padding-bottom: 30%;
 }
+.pt-10 {
+	padding-top: 2.5rem;
+}
 .text-left {
 	text-align: left;
 }
