@@ -12,12 +12,14 @@ const Sounds = ({ setPaused }) => {
   const playSound = (name) => {
     var audio = document.getElementById(name);
     const img = document.querySelector(`.${name}-image`);
+    const slider = document.querySelector(`.${name}-slider`);
 
     if (audio.paused) {
       toast.loading(`Loading ${name} 🎵`); /// loading state
 
       audio.play();
       img.style.opacity = 1;
+      slider.style.opacity = 1;
       setTimeout(() => {
         toast.remove();
       }, [1000]);
@@ -27,6 +29,7 @@ const Sounds = ({ setPaused }) => {
         toast.remove();
       }, [1000]);
       img.style.opacity = 0.35;
+      slider.style.opacity = 0;
     }
   };
   return (
@@ -58,8 +61,16 @@ const Sounds = ({ setPaused }) => {
           <h1 className="absolute top-0 left-0 ml-2 text-md font-light mt-1 opacity-[.85]">
             {sound.name}
           </h1>
-          <div className="w-[250px]">
-            <Slider min={0} max={100} valueLabelDisplay="auto" />
+          <div className={`w-[250px] ${sound.name}-slider opacity-0`}>
+            <Slider
+              min={0}
+              max={100}
+              valueLabelDisplay="auto"
+              defaultValue={100}
+              onChange={(e, volume) => {
+                document.getElementById(sound.name).volume = volume / 100;
+              }}
+            />
           </div>
         </div>
       ))}
