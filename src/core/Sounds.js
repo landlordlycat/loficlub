@@ -1,6 +1,7 @@
 import sounds from "../sounds";
 import toast, { Toaster } from "react-hot-toast";
 import { useEffect } from "react";
+import { Slider } from "@material-ui/core";
 
 const Sounds = ({ setPaused }) => {
   useEffect(() => {
@@ -35,7 +36,6 @@ const Sounds = ({ setPaused }) => {
           data-sound={sound.name}
           key={sound.id}
           className="m-3 cursor-pointer relative"
-          onClick={() => playSound(sound.name)}
         >
           <audio id={sound.name} preload="none">
             <source
@@ -46,6 +46,7 @@ const Sounds = ({ setPaused }) => {
           </audio>
           <img
             src={`/img/${sound.name}.gif`}
+            onClick={() => playSound(sound.name)}
             width="250"
             style={{
               height: "150px",
@@ -57,6 +58,9 @@ const Sounds = ({ setPaused }) => {
           <h1 className="absolute top-0 left-0 ml-2 text-md font-light mt-1 opacity-[.85]">
             {sound.name}
           </h1>
+          <div className="w-[250px]">
+            <Slider min={0} max={100} valueLabelDisplay="auto" />
+          </div>
         </div>
       ))}
       <Toaster position="bottom-right" />
