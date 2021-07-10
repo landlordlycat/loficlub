@@ -40,7 +40,7 @@ const Sounds = ({ setPaused }) => {
           key={sound.id}
           className="m-3 cursor-pointer relative"
         >
-          <audio id={sound.name} preload="none">
+          <audio id={sound.name} preload="none" loop>
             <source
               src={`/sounds/${sound.name}.mp3`}
               alt="play"
